@@ -1,0 +1,2 @@
+Install 
+/usr/local/databend/
