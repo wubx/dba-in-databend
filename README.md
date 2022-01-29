@@ -4,7 +4,7 @@ About Databend self-host deploy
 
 - [install local single Databend](install/single_databend/databend_local_install.sh)
 
--[Complie Databend in China](install/compile_databend_in_china/complie-databend-in-china.md)
+- [Complie Databend in China](install/compile_databend_in_china/complie-databend-in-china.md)
 
 - [Complie Databend](https://databend.rs/dev/)
 
