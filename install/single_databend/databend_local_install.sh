@@ -529,6 +529,7 @@ clickhouse_handler_port = 9001
 http_handler_host = "0.0.0.0"
 http_handler_port = 8000
 
+tenant_id = "test_tenant"
 cluster_id = "test_cluster"
 
 table_engine_memory_enabled = true
