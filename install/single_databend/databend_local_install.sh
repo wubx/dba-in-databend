@@ -578,8 +578,9 @@ EOF
 
 generate_start() {
 cat >/usr/local/databend/bin/start.sh<<EOF
+ulimit  -n 65535
 cd /usr/local/databend/
-nohup /usr/local/databend/bin/databend-meta --config-file=/usr/local/databend/etc/databend-meta.toml 2>&1 >mate.log &
+nohup /usr/local/databend/bin/databend-meta --config-file=/usr/local/databend/etc/databend-meta.toml 2>&1 >meta.log &
 sleep 3
 nohup /usr/local/databend/bin/databend-query --config-file=/usr/local/databend/etc/databend-query-node-1.toml 2>&1 >query.log &
 cd -
