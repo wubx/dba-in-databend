@@ -1,5 +1,23 @@
 About Databend self-host deploy 
 
+### What's Databend?
+Databend is a new digital warehouse developed using Rust, open source, and completely cloud-oriented architecture. It provides extremely fast and flexible expansion capabilities and is committed to creating an on-demand and on-demand Data Cloud product experience. It has the following characteristics:
+-Open Source Cloud Data Warehouse Star Project
+- Vectorized Execution 和 Pull&Push-Based Processor Model
+- True storage and computing separation architecture, high performance, low cost, on demand and on demand
+- Full database support, compatible with MySQL, Clickhouse protocols
+- Perfect Transactionality, Support Time Travel, Database Cloning and other functions
+-Support multi-tenant read, write and share operations based on the same data
+
+### Databend 是什么?
+Databend 是一个使用 Rust 研发、开源、完全面向云架构的新式数仓，提供极速的弹性扩展能力，致力于打造按需、按量的 Data Cloud 产品体验。  具备以下特点：
+- 开源 Cloud Data Warehouse 明星项目
+- Vectorized Execution 和 Pull&Push-Based Processor Model
+- 真正的存储、计算分离架构，高性能、低成本，按需按量使用
+- 完整的数据库支持，兼容 MySQL ，Clickhouse 协议
+- 完善的事务性，支持 Time Travel, Database Clone 等功能
+- 支持基于同一份数据的多租户读写、共享操作
+
 ### Where can use Databend ?
 1. If you want to realize the construction of a data lake, the bottom layer data has been placed on MinIO, AWS S3, COS, Seaweeds, and you are looking for a storage separation solution, then Database is what you are looking for.
 2. If you have put the data into the object storage of the public cloud and lack the analysis ability, then Database is the solution you are looking for.
@@ -24,11 +42,14 @@ About Databend self-host deploy
 
 - [Databend Cluster Deploy]() todo
 
-- [Deploy Databend with minIO]() todo
+- [Deploy Databend with minIO](https://github.com/wubx/dba-in-databend/tree/main/install/databend_minio)
 
 - [Depoly Databend with S3](https://databend.rs/learn/lessons/analyze-ontime-with-databend-on-ec2-and-s3)
 
 - [Deploy Databend with Qcloud COS]() todo
+
+### Benchmark
+- [Use Ontime benchmark databend](https://github.com/wubx/dba-in-databend/tree/main/bench/ontime)
 
 ### Admin
 

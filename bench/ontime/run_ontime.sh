@@ -24,6 +24,7 @@ RUN=10
 export script="hyperfine -w $WARMUP -r $RUN"
 
 script=""
+#before_sql="set parallel_read_threads=2;"
 function run() {
         port=$1
         result=$2
@@ -31,7 +32,8 @@ function run() {
         i=0
         while read SQL; do
                 f=/tmp/bench_${i}.sql
-                echo "$SQL" > $f
+		echo "$before_sql" > $f
+                echo "$SQL" >> $f
                 #s="cat $f | clickhouse-client --host 127.0.0.1 --port $port"
                 s="cat $f | mysql -h127.0.0.1 -P$port -uroot -s"
                 script="$script '$s'"
@@ -44,3 +46,5 @@ function run() {
 
 
 run "3307"  "$1"
+
+echo "select version() as version" |mysql  -h127.0.0.1 -P3307 -uroot >> $result
