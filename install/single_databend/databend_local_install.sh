@@ -468,7 +468,7 @@ download_databend() {
     for binexe in databend-meta databend-query; do
       #TODO(zhihanz) for windows we should add .exe suffix
       sudo install "${srcdir}/${binexe}" "/usr/local/databend/bin/"
-      ensure chmod +x "/usr/local/databend/bin/${binexe}"
+      ensure sudo chmod +x "/usr/local/databend/bin/${binexe}"
       log_info "✅ Successfully installed /usr/local/databend/bin/${binexe}"
     done
     rm -rf "${tmpdir}"
