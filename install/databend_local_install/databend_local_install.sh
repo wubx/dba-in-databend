@@ -586,7 +586,7 @@ data_path = "/usr/local/databend/data/stateless_test_data"
 [storage.s3]
 bucket="testbucket"
 region="us-east-1"
-endpoint_url="127.0.0.1:9900"
+endpoint_url="http://127.0.0.1:9900"
 access_key_id="minioadmin"
 secret_access_key="minioadmin"
 

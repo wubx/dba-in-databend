@@ -34,7 +34,7 @@ Databend 是一个使用 Rust 研发、开源、完全面向云架构的新式�
 
 ### Deploy
 
-- [install local single Databend](install/single_databend/databend_local_install.sh)
+- [install local single Databend](install/databend_local_install/databend_local_install.sh)
 
 - [Complie Databend in China](install/compile_databend_in_china/complie-databend-in-china.md)
 
