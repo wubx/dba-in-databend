@@ -12,6 +12,7 @@ Databend 是一个使用 Rust 研发、开源、完全面向云架构的新式�
 
 ## 环境说明
 计算层： CVM，推荐  16core ，32G 的机器 ，建议： SA2.4XLARGE32 以上机型
+
 存储层： COS， 创建 bucket ,创建密钥就可以使用。
 例如创建： databend bucket，可能出来的bucket是： databend-1255499614
 
@@ -58,3 +59,7 @@ secret_access_key=“****-youer-key-****"
 
 关闭
 /usr/local/databend/bin/stop.sh 
+
+## 测试
+
+[基于 Ontime 对 Databend 做性能测试](https://github.com/wubx/dba-in-databend/tree/main/bench/ontime)

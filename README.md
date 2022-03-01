@@ -46,7 +46,7 @@ Databend 是一个使用 Rust 研发、开源、完全面向云架构的新式�
 
 - [Depoly Databend with S3](https://databend.rs/learn/lessons/analyze-ontime-with-databend-on-ec2-and-s3)
 
-- [Deploy Databend with Qcloud COS]() todo
+- [Deploy Databend with Qcloud COS](https://github.com/wubx/dba-in-databend/blob/main/install/databend_qcloud_cos/databend_qcloud_cos.md) todo
 
 ### Benchmark
 - [Use Ontime benchmark databend](https://github.com/wubx/dba-in-databend/tree/main/bench/ontime)
