@@ -1,6 +1,6 @@
 echo "unzip ontime ,input your ontime zip dir: ./load_ontime.sh zip_dir"
 
-ls $1/*.zip |xargs -I{} bash -c "echo {}; unzip -q {} '*.csv' -d ./dataset"
+ls $1/*.zip |xargs -I{} -P 4 bash -c "echo {}; unzip -q {} '*.csv' -d ./dataset"
 
 if [ $? -eq  0 ];
 then 
