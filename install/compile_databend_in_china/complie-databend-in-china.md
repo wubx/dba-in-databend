@@ -54,7 +54,7 @@ git clone https://github.com/datafuselabs/databend.git
 
 ```Bash
 cd databend
-make setup
+make setup -d
 export PATH=$PATH:~/.cargo/bin
 ```
 
