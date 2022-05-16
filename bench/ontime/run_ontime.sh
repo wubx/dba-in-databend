@@ -24,7 +24,7 @@ RUN=10
 export script="hyperfine -w $WARMUP -r $RUN"
 
 script=""
-#before_sql="set parallel_read_threads=2;"
+#before_sql="set max_threads=16;"
 function run() {
         port=$1
         result=$2
