@@ -453,7 +453,7 @@ download_databend() {
     done 
     ensure chmod +x ./bin/*
     cp scripts/*.sh .
-    ecnsure chmod +x *.sh
+    ensure chmod +x *.sh
     rm -rf "${tmpdir}"
     return $_status
 }
